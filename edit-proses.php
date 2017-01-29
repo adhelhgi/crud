@@ -9,12 +9,12 @@ if(isset($_POST['simpan'])){
 	
 	//jika tombol tambah benar di klik maka lanjut prosesnya
 	$id			= $_POST['id'];
-	$UserName	= $_POST['UserName'];	//membuat variabel $nis dan datanya dari inputan NIS
-	$Attribute	= $_POST['Attribute'];	//membuat variabel $nama dan datanya dari inputan Nama Lengkap
-	$op			= $_POST['op'];	//membuat variabel $kelas dan datanya dari inputan dropdown Kelas
-	$Value		= $_POST['Value'];	//membuat variabel $jurusan dan datanya dari inputan dropdown Jurusan
+	$UserName	= $_POST['UserName'];	
+	$Attribute	= $_POST['Attribute'];	
+	$op			= $_POST['op'];
+	$Value		= $_POST['Value'];	
 	
-	//melakukan query dengan perintah UPDATE untuk update data ke database dengan kondisi WHERE siswa_id='$id' <- diambil dari inputan hidden id
+	
 	$update = mysql_query("UPDATE radcheck SET UserName='$UserName', Attribute='$Attribute', op='$op', Value='$Value' WHERE id='$id'") or die(mysql_error());
 	
 	//jika query update sukses
