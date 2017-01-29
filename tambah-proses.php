@@ -8,10 +8,10 @@ if(isset($_POST['tambah'])){
 	include('koneksi.php');
 	
 	//jika tombol tambah benar di klik maka lanjut prosesnya
-	$UserName		= $_POST['UserName'];	//membuat variabel $nis dan datanya dari inputan NIS
-	$Attribute		= $_POST['Attribute'];	//membuat variabel $nama dan datanya dari inputan Nama Lengkap
-	$op				= $_POST['op'];	//membuat variabel $kelas dan datanya dari inputan dropdown Kelas
-	$Value			= $_POST['Value'];	//membuat variabel $jurusan dan datanya dari inputan dropdown Jurusan
+	$UserName		= $_POST['UserName'];	
+	$Attribute		= $_POST['Attribute'];	
+	$op			= $_POST['op'];	
+	$Value			= $_POST['Value'];	
 	
 	//melakukan query dengan perintah INSERT INTO untuk memasukkan data ke database
 	$input = mysql_query("INSERT INTO radcheck VALUES(NULL, '$UserName', '$Attribute', '$op', '$Value')") or die(mysql_error());
