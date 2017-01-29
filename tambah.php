@@ -20,21 +20,17 @@
 			<tr>
 				<td>Attribute</td>
 				<td>:</td>
-				<td><input type="text" name="Attribute" required></td>
+				<td><input type="text" name="Attribute" value="Password" required></td>
 			</tr>
 			<tr>
 				<td>op</td>
 				<td>:</td>
-				<td>
-					<input name="op" required></td>
-				</td>
+				<td><input name="op" value="==" required></td>
 			</tr>
 			<tr>
 				<td>Password</td>
 				<td>:</td>
-				<td>
-					<input type="text" name="Value" required></td>
-				</td>
+				<td><input type="password" name="Value" required></td>
 			</tr>
 			<tr>
 				<td>&nbsp;</td>
