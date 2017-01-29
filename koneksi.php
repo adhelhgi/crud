@@ -1,7 +1,7 @@
 <?php
 $host = "localhost";	//nama host
-$user = "root";	//username phpMyAdmin
-$pass = "";	//password phpMyAdmin
+$user = "radius";	//username phpMyAdmin
+$pass = "mysqlsecret";	//password phpMyAdmin
 $name = "radius";	//nama database
 
 $koneksi = mysql_connect($host, $user, $pass) or die("Koneksi ke database gagal!");
